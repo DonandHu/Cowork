@@ -1,4 +1,84 @@
 
+
+*Thinking...*
+
+> **Deciphering the Objective**
+> 
+> I've been focused on the user's ultimate aim: extracting the table data and restructuring it. My current strategy involves dissecting the image—identifying its table-like organization and the specific content it holds. I'm prioritizing accuracy in the table's reconstruction, which will require careful content recognition.
+> 
+> 
+> **Dissecting Image Structure**
+> 
+> I'm now carefully mapping the image's layout. My analysis indicates the first two columns, "Date/Region," actually split into "Date" and "Region." The header row requires close scrutiny, and I've identified the key columns: Date, Region, Time, Institution, Attendees, and Address/Link. I'm focusing on the relationship of "Date" and "Region" to account for their combined visual presentation.
+> 
+> 
+> **Structuring Table Elements**
+> 
+> I'm now zeroing in on accurate table construction.  "Date" and "Region" require special handling, especially when dealing with the "rowspan" behavior. I'm focusing on the relationship between these columns, and then identifying the content for each cell, ensuring I match the information to the correct column. The "UBS (线下)" entry needs special attention to correctly correlate "Region" with "Institution".
+> 
+> 
+> **Clarifying Data Dependencies**
+> 
+> I'm now prioritizing the relationships between the "Date/Region" cells. The dates and regions act as spanning labels for the subsequent data. My focus is on correctly associating each meeting detail (Time, Institution, Attendees, Address/Link) with the appropriate "Date" and "Region" values, particularly handling merged rows effectively, and understanding the intended layout of the document.
+> 
+> 
+> **Revisiting Header Relationships**
+> 
+> Now I'm more focused on the header and cell relationships. Specifically, I'm adjusting my understanding of the "Date/Region" and "Region" columns. I'm focusing on "Date" as the primary key and "Region" as a related column, and am now prepared to associate each data point with the corresponding date and region. The UBS exception requires that I clearly mark the association.
+> 
+> 
+> **Synthesizing Table Construction**
+> 
+> I'm now fully immersed in constructing the final table output. The core challenge is properly combining the information from the "Date/Region," "Time," "Institution," "Attendees," and "Address/Link" columns. The UBS exception requires special cell modifications, which are now correctly associated. I am confident in the successful generation of the desired table structure.
+> 
+> 
+> **Table Refinement and Output**
+> 
+> I'm now implementing the Markdown table structure, carefully accounting for row spans and multi-line cell content using `<br>`. My focus is creating a visually accurate table, paying attention to the details of the UBS entry. I'm preparing to output the complete table, ensuring that the relationships between cells and headers are accurately represented.
+> 
+> 
+> **Generating the Table Output**
+> 
+> I'm now fully immersed in generating the table in Markdown format. The primary goal is to replicate the source table structure faithfully, accounting for row spans and multi-line content, and the "UBS (线下)" entry. I will use `<br>` to replicate the format for clarity. I'm carefully double-checking the links and names.
+> 
+> 
+> **Generating the Final Output**
+> 
+> I'm checking all cells to ensure accurate content replication, especially the multi-line content and the UBS exception. I'm now crafting the Markdown output, prioritizing both visual faithfulness and readability. My final focus is to ensure the formatting matches the source as much as possible, including the proper handling of all URLs and the use of the `<br>` tag.
+> 
+> 
+> **Generating Markdown Table**
+> 
+> I'm now generating the final Markdown table, carefully integrating all the findings. The focus is now on ensuring perfect formatting of the table, including all the links and handling of all exceptional cases such as the UBS entry. I'm taking the final steps to create the final, complete Markdown table output.
+> 
+> 
+这是一份基于图片内容的文字识别表格。
+
+| 日期/地区 | 地区 | 时间 | 机构 | 参会人员 (姓名, 职位) | 地址 / 会议链接 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **2026-1-28**<br>星期三 | 线上 | 09:00-10:00 | 大家资产 | 徐博 (TMT研究员) | https://meeting.tencent.com/dm/phezrKljKOxh<br>腾讯会议: 286-773-935 |
+| | | 14:00-15:00 | UBS (线下) | - | 广合科技现场 |
+| **2026-2-2**<br>星期一 | 线上 | 10:30-11:30 | 工银理财 | 徐昊程 (投资经理) | https://meeting.tencent.com/dm/Cn79XfgYwYvA<br>#腾讯会议: 140-435-395 |
+| | | 12:00-13:00 | Verition | Hao Long (Fund Manager) | https://meeting.tencent.com/dm/Sl00KTAu4EGP<br>#腾讯会议: 684-998-829 |
+| | | 14:00-15:00 | Pictet | Kevin Duan (Analyst) | https://meeting.tencent.com/dm/6o8oya7hzILL<br>#腾讯会议: 309-558-505 |
+| | | 15:00-16:00 | Hillhouse | Vivien Xu (Fund Manager)<br>Zhiren Tham (Trader) | https://meeting.tencent.com/dm/0Ewfra3HT38t<br>#腾讯会议: 699-724-423 |
+| | | 16:30-17:30 | Greenwoods | Xu Wei (Analyst) | https://meeting.tencent.com/dm/tA7nrDbSQNZM<br>#腾讯会议: 196-625-744 |
+| **2026-2-3**<br>星期二 | 线上 | 09:00-10:00 | Jain Global | Max Zhang (Analyst) | https://meeting.tencent.com/dm/qlNUdFzgkUjX<br>#腾讯会议: 444-186-134 |
+| | | 10:30-11:30 | Invesco | Millie Chen (Analyst) | https://meeting.tencent.com/dm/Vqb7JhHvRAB5<br>#腾讯会议: 711-432-670 |
+| | | 12:00-13:00 | Jane street (英文) | Tony Carango (Managing Director) | https://clsa.zoom.com/j/86566572677<br>Zoom Meeting ID: 865 6657 2677 |
+| | | 14:00-15:00 | Mirae | Aaron Ju (Head of TMT)<br>Michael Li (Fund Manager) | https://meeting.tencent.com/dm/DhGVSpc5CU17<br>#腾讯会议: 648-553-357 |
+| | | 15:30-16:30 | Baring | Nicola Lai (MD) | https://meeting.tencent.com/dm/tuXOhjxbTB8O<br>#腾讯会议: 846-359-279 |
+| | | 17:00-18:00 | Infini | Tony Huang (Portfolio Manager) | https://meeting.tencent.com/dm/QFAQMB7eFrMC<br>#腾讯会议: 760-190-965 |
+| **2026-2-4**<br>星期三 | 线上 | 10:30-11:30 | CPE源峰 | 张冲 (TMT资深研究员) | https://meeting.tencent.com/dm/Z0qTKb4smo5d<br>#腾讯会议: 410-529-276 |
+| | | 14:00-15:00 | Value Partner | Zheng Long (Analyst) | https://meeting.tencent.com/dm/7BfFnCOVSbKH<br>#腾讯会议: 343-165-880 |
+| | | 15:30-16:30 | 中邮理财 | 龚晨晨 (权益部总经理) (待定)<br>李相南 (投资助理)<br>孙铄琪 (投资助理)<br>周翔 (研究员) | https://meeting.tencent.com/dm/HmNfR3W5a9sP<br>#腾讯会议: 598-764-429 |
+| | | 17:00-18:00 | JPM PROP | John Yan (中国区负责人)<br>Dennis Dang (PM)<br>Andrea Kong (Analyst) | https://clsa.zoom.com/j/89208431709<br>Zoom Meeting ID: 892 0843 1709 |
+| **2026-2-5**<br>星期四 | 线上 | 09:00-10:00 | 泰康资产 | 王嘉艺 (电子研究员) | https://meeting.tencent.com/dm/Qo85JIpcOKpv<br>#腾讯会议: 367-485-078 |
+| | | 10:30-11:30 | Millennium | Henry Wang (Fund Manager)<br>Chuck Yao (Analyst) | https://meeting.tencent.com/dm/jlXmPobUi3at<br>#腾讯会议: 588-647-448 |
+| | | 14:00-15:00 | 信庭投资 | 王辉 (董事总经理) | https://meeting.tencent.com/dm/bu2SYiRNldug<br>#腾讯会议: 722-559-131 |
+| | | 15:30-16:30 | Qube | Yolanda Zheng (Analyst) | https://meeting.tencent.com/dm/w76ppCGs5QU7<br>#腾讯会议: 378-231-150 |
+| | | 17:00-18:00 | 嘉实基金 | Katherine Sun (权益投资事业部合伙人) | https://meeting.tencent.com/dm/w2v5HyAtv2cF<br>#腾讯会议: 335-162-080 |
+
 非常感谢您今天的时间，我是汇丰ECM的Juanita，面前是曦智科技的CEO沈博、CFO Bill Zhang和资本市场总监Claire Liu。
 
 曦智科技是一家专注全球光电混合加速计算的领导者，实现了世界上最大规模的光电混合加速计算部署。公司也是去年9月秘交A1，目标于今年一季度完成上市，融资规模2-3亿美元的区间。
