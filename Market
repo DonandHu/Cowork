@@ -1,3 +1,31 @@
+
+*Thinking...*
+
+> **Summarizing interview questions**
+> 
+> The user wants me to summarize the questions from an interview in English, specifically from Speaker 2 (and possibly 3). I need to create a concise bullet list of the major questions. 
+> 
+> Key topics to extract include: market entry, PCIe transition to general servers, definition of general servers, support capacity, focus on HDI, customer exposure, end versus middle strategies, capacity fungibility compared to competitors, capacity planning over three years and influencing variables, capex commitments and lead times, capex/revenue ratios, lag, capex mix for greenfield versus brownfield projects, working capital management, and returns on equity.
+
+## Interview Questions (English Summary)
+
+1. How did you enter the AI server/AI hardware market, and what was your original positioning (network vs. servers)?
+2. Looking ahead (e.g., with PCIe), do you expect a shift toward more “general server” demand, and does that play to your strengths?
+3. Can you clarify what you mean by “general server” in this context?
+4. Is HDI (high-density interconnect) *not* a focus area for you, and is it fair to say you focus more on high-layer / high-end boards rather than HDI-for-accelerator products?
+5. When you say you want to restrict single-customer exposure to 25%, do you mean:
+   - the **end customer** (design owner), or  
+   - the **intermediate customer** (ODM/OEM/middleman managing sourcing)?
+6. How do you practically control or monitor that 25% concentration limit given industry consolidation among a small number of OEMs/ODMs?
+7. From an investor perspective, is your capacity relatively “fungible” (able to shift across customers/products), unlike competitors with capacity dedicated to HDI accelerator boards?
+8. Can you discuss your capacity plan for the next ~3 years and the key variables that could cause the plan to increase or be revised downward?
+9. What is your typical “commitment horizon” for capex—how far in advance are you locked in if market demand changes suddenly (e.g., fewer servers needed)?
+10. Is it reasonable to use a rule of thumb like **1–2× capex-to-revenue** ratio for your business, or should investors expect a higher ratio going forward?
+11. Is **6–12 months** a reasonable way to think about the lag between capex spending and revenue, and how does that differ by project type/location?
+12. For 2025–2026 capex, what is the approximate mix between **greenfield** vs. **brownfield** expansion?
+13. How do you manage working capital and protect ROE as you expand, and how do you ensure reasonable returns on the increased investment?
+
+
 Executive Summary
 
 The meeting focused on operational readiness for the upcoming IPO, specifically addressing lessons learned from previous deals regarding contactability of Private Banking (PB) teams. The team discussed the division of labor with CITIC regarding FINI tasks, established communication protocols (WeChat vs. Teams), and confirmed the settlement timeline. A decision on a FINI dress rehearsal is pending CITIC’s confirmation.
