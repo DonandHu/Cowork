@@ -1,6 +1,471 @@
 
 *Thinking...*
 
+> **Structuring data tables**
+> 
+> I’m thinking about how to organize this data—maybe presenting it as multiple tables instead of one big, unreadable table. If I combine一些相关项目 into a single column, that could help. Perhaps I should separate it into a '核心跟进表' and a '补充信息表'.
+> 
+> I need to parse the data carefully to ensure I don't miss critical details. I could consider grouping rows by status categories, with clear sections to improve readability. Maybe I’ll also offer the option to format this into TSV or CSV if needed!
+> 
+> **Designing table structure**
+> 
+> I'm planning out my table structure, including columns like 对接人, 来源, 机构类型, and others. While the table is still quite wide, I want to keep it manageable with line breaks.
+> 
+> I could use HTML line breaks in the table for better readability. For instance, I might summarize long introductions to institutions into concise sentences. I want to retain crucial information but may cut down lengthy descriptions for clarity.
+> 
+> If the user needs those longer descriptions, I can offer an Excel version as well. I’m debating whether to include all 80+ rows—maybe I will!
+> 
+> **Organizing tables by source and status**
+> 
+> I'm considering creating four tables based on the sources: 公司, MS, HSBC, and 华泰. This aligns with source categories and could simplify things. However, since the user likely cares more about the pipeline, statuses might need to be mixed within those sources.
+> 
+> To enhance readability, I could use one master table grouped by status section headings. We'll need to ensure we extract all records carefully, starting from the initial block of data, listing out everything methodically. This will help keep all the relevant details!
+> 
+> **Reviewing request details**
+> 
+> I have various requests and interactions to consider here. For example, I see a reverse inquiry from 3/11. There are also materials requested on 3/30. I’m noting AUM figures and AI cases, along with some interactions related to NDAs and management meetings—though some details are missing, like the management info.
+> 
+> Current statuses show several follow-ups from MS Crossover Investors, like positive feedback from a couple of sets while another is waiting for a meeting to be scheduled. Looks like I need to consolidate all this information clearly!
+> 
+> **Summarizing pending interactions**
+> 
+> I see various pending meetings and communications across different funds. For instance, there’s a scheduling call for the MS Global Growth Fund with DST, where they want to involve specific people. There’s also an outreach from Temasek, but details about AUM are missing.
+> 
+> I have a couple of hold statuses and some empty entries to address. Then there’s a follow-up request from the MS Middle East Fund. I need to ensure that all necessary details are extracted and organized clearly!
+> 
+> **Reviewing ongoing discussions**
+> 
+> I’m seeing several entries about ongoing communications for different growth funds. For example, there's a discussion on targeting a Shanghai AI fund with Cathay Capital, noted for its AUM, but details are still missing. 
+> 
+> The MS Global PE Investcorp and Orix Capital discussions are active, with notable AUM figures mentioned. There’s also an interest in scheduling management calls with Macquarie Capital. Additionally, there’s a request for a call with management from the Middle East Funds. I’ll need to organize this data clearly!
+> 
+> **Summarizing ongoing engagements**
+> 
+> I’m processing several entries regarding follow-ups from HSBC on various funds. For instance, there's positive feedback from Blackrock after their presentation, and AUM details are quite significant with AI cases mentioned. 
+> 
+> The HSBC Global Growth Fund has had multiple meetings and is gathering more due diligence materials. There's also an NDA in progress with the Investment Corporation of Dubai, alongside information from GIC in Singapore.
+> 
+> I need to ensure all relevant data is organized and presented clearly while paying attention to any missing details!
+> 
+> **Reviewing various HSBC interactions**
+> 
+> I’m noticing several ongoing engagements with HSBC's Crossover Investors. For example, there are entries related to Jane Street and Ward Ferry, each with their AUM figures and cases mentioned. 
+> 
+> Particularly interesting are the cases for Anthropic and Coreweave. Other funds like the HSBC Family Office and GSAM also appear, showcasing a range of investments. 
+> 
+> I need to ensure I track these interactions clearly while noting the absence of some details in certain entries, making it imperative to keep all necessary information well-organized!
+> 
+> **Examining HSBC's investment interactions**
+> 
+> I'm seeing numerous entries related to HSBC's various investment divisions. For instance, there's information on Polar Capital and Wellington, highlighting their AUM and introductory notes. Some notable mentions include HSBC's Global Private Equity involving significant cases like OpenAI and Microsoft. 
+> 
+> I also spot interactions with several family offices, though AUM details are often missing. It’s essential to keep this information organized to ensure clarity and to potentially identify further opportunities for the user later!
+> 
+> **Following up with Hua Tai's investments**
+> 
+> I'm noting several interactions related to Hua Tai, particularly with their long-term fund and corporate arm. For example, the CLSA Asian Growth Fund shows initial interest but wants more information before making a decision. Other mentions include Didi and various capital firms, like 增途资本 and 源一资本, both looking for further details. AUM isn’t disclosed for many of these, which could affect tracking progress. Organizing this information will help in managing future communications effectively!
+> 
+> **Organizing investment statuses**
+> 
+> I'm reviewing several companies with interest in IPO cornerstone reserves, including Fidelity, FMR, Pictet, Capital Group, and UBS GAM, who all have varying levels of engagement. However, MS Global Growth Fund appears less enthusiastic after a recent meeting, indicating that their strategy doesn’t align with unique offerings. To manage this information better, I’m considering splitting it into five categories based on priority and current status, helping to clarify which investments need more follow-up or confirmation. This should streamline my tracking process!
+> 
+> **Structuring by source and status**
+> 
+> I'm considering how to organize the data by source while incorporating status clarity. Grouping by "来源" makes sense since some rows lack status, and it will be clearer. I can categorize by sources like 公司, MS, HSBC, 华泰, and Zubaid, which might be better as a separate section. For each source, I'll list the rows with their corresponding statuses, balancing length and clarity across five sections. Each source contains a manageable number of rows, and I can present this in Markdown tables, which is certainly acceptable for conveying this information effectively.
+> 
+> **Planning table structure**
+> 
+> I'm considering simplifying the table by selecting only seven key columns, such as status, contact person, institution, and progress. Even though some columns like institution intro and NDA might be seen as less critical, the user included them, so I’ll keep them. I could also merge "AUM / 案例 / 介绍" into one column to maintain readability. I think I’ll use “—” for many blank entries and standardize units as "AUM: 9930" where applicable. I plan to note: “内容较多，我按来源拆分，并压缩字段为：状态 / 对接人 / 机构（类型） / 联系人 / 进展 / AUM&案例 / 其他流程.” Then, I'll create separate sections for each source, like 对于公司, which will have about 20 rows.
+> 
+> **Sorting statuses and filling rows**
+> 
+> I need to sort the statuses, putting "已明确投资意向" first, followed by the others like "已见面跟进中," etc. In the company section, there are hold rows too, which is good. I want to fill in the "AUM/案例/简介" succinctly, especially since many entries are blank. For those with examples, I can include snippets directly like "案例：MiniMax；与壁仞有合作基金." If there's no information, I'll use "—". I'll also add specifics about processes like "NDA签署中" where applicable, while keeping a separate column for process details.
+> 
+> **Reorganizing columns and parsing rows**
+> 
+> I'm thinking about adjusting the columns to this: "状态 | 对接人 | 机构（类型） | 联系人/职务 | 意向/进展/反馈 | AUM/案例/机构简介 | 流程节点." This setup works better. I'll fill the "流程节点" with management, NDA, or VDR if applicable. For rows with blank statuses after "预沟通," I could categorize them as "待确认/未标状态." 
+> 
+> For the Zubaid list, I might treat it as a separate section labeled "Zubaid（中东）." 
+> 
+> As for the MS section, I'll compress lengthy introductions and list a few major examples for AI cases. I need to make sure to note meetings and NDAs: for example, with GA, they have an AUM of over $1,000, with major cases like Anthropic and SmartHR, and a flow indicating NDA signed. For Al Futtaim, their family office manages approximately $4.6 billion, which I can express as "46亿美元." But it's tricky since their original AUM is noted as NA, even though I can compute it from the introduction.
+> 
+> **Finalizing AUM and structuring tables**
+> 
+> I think it’s better not to derive from assumptions; I’ll keep the note that the family office AUM is approximately $4.6 billion as mentioned. For various firms, I’ve noted their AUMs: Granite Asia AUM 60+, Vertex 7.5+, Aspex NA, and others like Softbank at over 1,000 and Temasek blank. 
+> 
+> In the HSBC section, with many rows showing minimal progress, I might consider splitting it into “已见面跟进中” and “潜在线索,” but using one table with a status column seems manageable since many are blank and can be labeled "未标状态." 
+> 
+> For the Zubaid section, since all show no status, I think separating it into a scouting list might work. 
+> 
+> Lastly, the 华泰 section consists of 5 rows with relevant statuses, and it might be good to check if the user wants an Excel-friendly TSV format.
+> 
+> **Considering table formatting issues**
+> 
+> I’m noticing a potential issue with Markdown tables—it seems that long text may wrap poorly, which could hinder readability. The user has explicitly requested tables, though, so I'm inclined to stick with that format. I might need to use HTML `<table>` tags, but Markdown tables should suffice too. If line breaks occur within cells, I can use `<br>` for clarity.
+> 
+> I'll also want to be selective with institution introductions to keep them concise. A note like "长段机构介绍已浓缩到一句话" could help.
+> 
+> I need to fix some typos in the original document, like ensuring "EvolutionaryScale" is correct instead of “EvolutionaryScal.” The date for Granite Asia's arranged meeting has a typo, so I'll normalize it to March 24, 2026, based on the context provided.
+> 
+> **Normalizing statuses and column labels**
+> 
+> It's important for me to normalize the statuses and column labels in the tables. I’m considering how to produce "可直接复制到 Excel 的 Markdown table," which seems possible since a Markdown table should be pasteable. However, if the user is likely working in a Chinese environment, they may prefer a polished table. I could shorten headers and use icons, but that's not strictly necessary.
+> 
+> I’ll need to include all rows, even though it might make the document around 9k-12k words. I’ll ensure everything is concise and structured.
+> 
+> For the company section, I will sort the statuses as follows: 
+> 
+> - **已明确投资意向:** 和谐健康, 金融街资本, 平安海控. 
+> - **已见面跟进中:** a list of companies I need to follow up. 
+> - **待安排见面:** Gatelanes. 
+> - **预沟通:**厚朴, 典实资本, 人保股权. 
+> - **Hold:** Fidelity and other firms. 
+> - **待确认/未标状态:** Horizon Ventures and more.
+> 
+> I should note that any status that is blank should also be recorded as “待确认/未标状态.”
+> 
+> **Organizing company information**
+> 
+> I think I need to include "公司" in the heading, but I won't need a separate column for it. I can use columns like: 状态, 对接人, 机构（类型）, 联系人/职务, 进展/反馈, AUM/案例/简介, and 流程 to fill in the information comprehensively. 
+> 
+> For example, for 和谐健康, I would list: "已明确投资意向," "Jade," and details about the contact and their feedback. I’d follow the same pattern for other companies such as 金融街资本 and 国开科创. 
+> 
+> For 阿曼招商基金, I could put in details about meetings and case examples as needed. I also plan to address specific concerns for 善水资本 and provide updates for other firms. 
+> 
+> Finally, I’ll create a section for Zubaid titled "Zubaid / Middle East scouting" to keep everything organized.
+> 
+> **Structuring Zubaid information**
+> 
+> For the Zubaid section, I think it's reasonable to maintain the columns like: 状态, 机构（类型）, 联系人/职务, AUM/案例, and 简介/备注. I could set all statuses to "未标状态" since that might be more straightforward. 
+> 
+> I’ll list companies like ADFO, ADIA, and Mubadala, summarizing lengthy introductions, such as for Humain and Lunate/Axight. For ADIA, AUM is 9930, with cases like Qlik and Lila Sciences included.
+> 
+> For the MS section, I'll sort by status and ensure there’s no blank information. I’ll also note companies where the intent post-meeting isn't promising.
+> 
+> **Organizing MS and HSBC sections**
+> 
+> For the MS section, I need to note that we have some "Hold" entries like Warburg, and for "预沟通," there's Hel Ved and others. I think listing "未标状态" for Baupost is a good move, too. 
+> 
+> I’m considering breaking the long table into three subtables by status for better readability. It could help since a single table with 23 rows might be cumbersome. I want to keep it concise, using shorter one-liners for each investor’s intro instead of lengthy descriptions. This seems manageable and effective!
+> 
+> **Organizing HSBC and 华泰 sections**
+> 
+> I think it's a good idea to label blank statuses as "未标" instead of using "—." 
+> 
+> In the HSBC section, I’ll sort by status. For “已见面跟进中,” I have entries like Blackrock, while “未标状态” includes multiple institutions. I might consider separating these statuses for clarity. 
+> 
+> For the 华泰 section, I can easily provide a legend at the top, detailing AUM units in billions and how to interpret the table. Also, I should mention that if the user needs the output in Excel-friendly format, I’m happy to provide that too!
+> 
+> **Adjusting table details**
+> 
+> I need to correct "Middle East Funds" to "Middle East Fund," though it's not critical. There's a potential challenge with output length, but I’ll create detailed tables anyway. I want to ensure consistent Markdown table syntax by using pipes correctly and avoiding too many vertical bars in the text. I’ll use Chinese punctuation instead and `<br>` for readability.
+> 
+> At the top, I might include a note saying: "我按**来源**拆成 5 张表，并把超长描述压缩成‘要点版’。AUM单位均为**亿美元**；未提供记为‘—’。" I should also mention that I can provide a TSV version for Excel if the user wishes. 
+> 
+> Now, I’ll draft each table with around 25 concise rows. For example, in the company section, I could format cells like "和谐健康（China PE）" and "杨景熙，投资总监." Additionally, I’ll include "流程" for some rows, like: 壁仞/东方国际资管: "3/26上海初沟；后续：立项会→投决会," and "NDA已签" for Fidelity in the Hold rows.
+> 
+> **Organizing table details**
+> 
+> I could keep the progress column too, but having a separate process column helps avoid repetition. I'll need to be careful not to create tables with too many line breaks in the cells, as that might make them hard to read. Keeping the information concise with one sentence is a good idea.
+> 
+> I'll start with the company section, structured row by row. For example: 
+> 
+> | 状态 | 对接人 | 机构（类型） | 联系人/职务 | 进展/反馈 | AUM/案例/简介 | 流程 |
+> | --- | --- | --- | --- | --- | --- | --- |
+> | 已明确投资意向 | Jade | 和谐健康（China PE） | 杨景熙，投资总监 | 8–10亿元；需安排尽调问题讲解会；尚未沟通新估值/策略 | — | — |
+> 
+> For blank status rows, I'll label them as "未标状态".
+> 
+> For the Zubaid section, I think I can simplify to just four columns: 
+> 
+> | 机构 | 类型 | AUM | AI/前沿科技案例 | 备注 |
+>   
+> I’ll list ADFO, ADIA, ADIC, Lunate/Axight, Blue Five Capital, Mubadala, KIA, QIA, Humain (PIF), Olayan, and Khazanah. Since the user requested an organized format, it makes sense to omit the status here since it's absent for this scouting list.
+> 
+> **Structuring sections for clarity**
+> 
+> I think it makes sense to have two tables for the MS section. The first one can include "已见面/强跟进" with rows for GA, Al Futtaim, Granite Asia, Aspex, Softbank, Sylebra, and Ghisallo — maybe I'm missing a few based on status. The second table will contain "待安排/预沟通/Hold/不推进/其他" with Arena, DST, DAMAC, Miras, Hel Ved, Temasek, Warburg, B Capital, Baupost, Cathay, Investcorp, Orix, Macquarie, SIG, Vertex, and Vitruvian. This should help reduce size — great!
+> 
+> For the HSBC section, similarly, I can set it up with two tables: one for "已见面跟进中" including Blackrock, HSBC Venture, and ICD, and another for "覆盖名单/未标状态" that includes the rest.
+> 
+> For the company section, I could consolidate everything into one table with about 26 rows, or possibly split it into "公司直联" and "公司储备/待确认." I might want to note that "为了好读，我把超长机构介绍浓缩为一句话," which gives context about shortening descriptions but ensures clarity.
+> 
+> I shouldn’t forget important details in specific rows, like noting that "团队Xindi郭心笛之前来公司交流过，出了6000万美金的TS" is crucial for Softbank or mentioning "NDA sent for execution" for Ghisallo shows enthusiasm. Plus, for the CP Group, I’ll note "先聊战略合作，再谈投资," and for Arena, I should include something like "3/31线下面谈已排期/待开展."
+> 
+> **Organizing tables for clarity**
+> 
+> I’m looking into the interest from Temasek and managing a scheduling call with Macquarie. For Baupost, there’s no status, so I might label it as "未标状态" in the other section. I’ll note that Vertex and Vitruvian have "passed."
+> 
+> In the HSBC section, I can create a table for "已见面跟进中," noting Blackrock's positive progress and their suggestion to connect with other teams. HSBC Venture has had multiple meetings but needs more due diligence materials. ICD had a meeting on 1/30, and an NDA is in the signing process.
+> 
+> For the other table, I can keep minimal progress noted. Perhaps I should also add a row for 增途资本 from 华泰 with “已见面；进展待补.”
+> 
+> It seems the user might prefer a single master table. Still, splitting them makes sense for clarity, especially if I explain that it's organized "按来源拆成多张表." I could also add a top-level “总览” table summarizing counts by status/source for better readability. That would be nice and useful!
+> 
+> **Summarizing progress counts**
+> 
+> I think a short summary table at the top could be very helpful. It would include counts for each source in these categories: 来源, 已明确投资意向, 已见面跟进中, 待安排见面, 预沟通, Hold, 意向不佳, and 未标状态/待确认.
+> 
+> For the company section, I can summarize the counts: 
+> - 明确投资意向: 3 
+> - 已见面跟进中: 14 (with all the relevant companies included). 
+> - 待安排见面: 1 
+> - 预沟通: 3 
+> - Hold: 5 
+> - 意向不佳: 0 
+> - 未标状态: 5 (with the specific companies listed).
+> 
+> The total would be 31 if I double-check my math. For Zubaid, it could be 11 since all are unmarked. MS shows 8 already met and 4 pending meetings, with 8 in pre-communication. This will add meaningful clarity!
+> 
+> **Creating an overview table**
+> 
+> It looks like I’m putting together an overview table for different sources, which summarizes the counts of interactions and statuses. Here’s what I have so far:
+> 
+> - **Sources**: Company, Zubaid, MS, HSBC, 华泰.
+> - For Company: totals are 31 — with 3明确投资意向, and 14已见面跟进中, plus numbers for待安排, 预沟通, Hold, 意向不佳, and 未标状态.
+> - For Zubaid, it totals 11 with all in未标状态.
+> - MS shows 24 with different interactions.
+> - HSBC adds up to 22, with 19 in未标状态.
+> - 华泰 has 5 total with specific counts.
+> 
+> This summary should be pretty useful! I need to include AUM units as well and note that I counted according to the original content. Let's double-check the counts to avoid typos!
+> 
+> **Structuring detailed tables**
+> 
+> I’m planning to create a more readable layout by splitting the information into an overview and detailed source tables. It makes sense to keep the original column "VDR access" intact. For example, in the GA row, I’ll note "reviewing VDR," while others might have no updates or could be integrated into the process column. 
+> 
+> I’ll also condense the institution introductions using semicolons and avoid overly lengthy descriptions. It’s important to balance conciseness with informative content, ensuring that each table has the same column count. I'll use Chinese punctuation and keep the details well-organized. Time to start drafting!
+> 
+> **Organizing table structure**
+> 
+> I’m focusing on creating tables with many rows while avoiding line breaks within cells to maintain structure. Using `；` as a separator seems safest. I’ll ensure each cell remains to one line, even if some contents are a bit long. A concise summarization will guide the institution introductions, combining AUM, cases, and introductions to keep it brief, like "AUM 60+；案例：Centific、Jina AI；前GGV Asia."
+> 
+> I’ll prepare an overview and then craft a company section with around 31 rows. Although this is lengthy, I might consider splitting into two tables: `公司（在推进）` and `公司（储备/待确认）` to enhance readability. Let’s get started!
+> 
+> **Organizing company tables**
+> 
+> I think splitting the company sections into two tables could improve readability. The first table will focus on key progress with 21 rows, while the second will cover reserve and pending confirmations with 10 rows. For Zubaid, I can create a single table with 11 rows. 
+> 
+> I'm also considering splitting the MS section into one for "MS—已见面" with 8 rows and another for "MS—待安排/预沟通/其他" with 16 rows. HSBC will have two tables as well, one for "已见面跟进中" with 3 rows and one for "覆盖名单" with 19 rows.
+> 
+> I want to ensure that I keep descriptions concise, then format the columns as follows: 状态 | 对接人 | 机构（类型） | 联系人/职务 | 进展/反馈 | AUM/案例/简介 | 流程. It’s going to be great!
+> 
+> **Preparing reserve company details**
+> 
+> For the reserve company rows, I need to include: Horizon Ventures, Sun Hung Kai Capital, Arc Avenue, 快手, 元溪资本, Fidelity, FMR, Pictet, Capital Group, and UBS GAM. I'll assign these statuses as "未标状态." 
+> 
+> Next, I have Zubaid with 11 rows and an MS "已见面" table with 8 rows, mostly marked as "已见面跟进中" except for Softbank. 
+> 
+> For progress updates, I have detailed notes for GA, Al Futtaim, Granite Asia, Aspex, Softbank, Sylebra, Ghisallo, and CP Group, and I need to accurately reflect their statuses in the other MS table with 16 rows, which will vary between categories like "待安排见面" and "意向不佳."
+> 
+> **Summarizing statuses and progress**
+> 
+> I'm compiling progress updates. For Baupost, the status is "未标状态" with no notable progress. Vertex has passed due to some reasons, while Vitruvian isn't a strategic fit. It might be good to organize the statuses as pending, pre-committed, on hold, unmarked, or no-go.
+> 
+> HSBC has three "已见面" rows and nineteen coverage rows, which I'll format with columns: 状态 | 机构（类型） | 联系人/职务 | AUM/案例/简介 | 备注. 
+> 
+> Regarding Hua Tai, I’ve noted five rows but may need to clarify some contacts, particularly for those marked "待确认联络线." I'll also make sure I accurately represent AUM units for Softbank and ensure I maintain clear formatting throughout.
+> 
+> **Adjusting categories and details**
+> 
+> I need to translate categories like "Global Private Equity" into Chinese for better clarity. Using the original English alongside a Chinese summary could work: "中资PE / 全球PE / 家办 / Corporate / Sovereign Fund / Long only..." 
+> 
+> Abbreviations might help save space, for instance, "和谐健康（China PE）". It seems there might be a missing row for "阿曼招商基金" under "已见面跟进中," which should be included since it falls under Global PE. I also want to ensure that I reflect "General Atlantic" properly, and may need to clarify the contact title for Jim in "Mirae Asset." 
+> 
+> Additionally, while considering "Zubaid," I think it’s okay to mention "Shirley" as the contact person in that section, as it may add coherence when all rows list her.
+> 
+> **Refining table structure and details**
+> 
+> I think I can simplify things by stating that "该组线索对接人均为 Shirley," which is nice and straightforward. We shouldn't need to repeat that in the tables. 
+> 
+> Also, I should unify notes like "AUM 未公开 / 暂无披露 / NA" into a single term "未披露" for clarity. Keeping introductions brief, like "阿布扎比AI与云计算巨头" for G42, will work better.
+> 
+> Including a brief list of 2-3 cases is also a good idea. I’ll draft a markdown table using six columns instead of seven, which combines "联系人/职务" and "进展." The columns will be: | 状态 | 对接人 | 机构（类型） | 进展要点 | 补充信息（AUM/案例/简介/流程） | to maintain efficiency and readability.
+> 
+> **Finalizing table format and details**
+> 
+> For example, the GA supplementary info could be, "AUM 1000+; Cases: Anthropic, Runway; Management: 3/16 Onsite; NDA Signed; VDR Reviewing." I think using this six-column format consistently throughout is perfect. 
+> 
+> We can combine AUM, cases, organization introduction, and process nodes into the "Supplementary Information" column. It's essential to ensure there are no pipes in the text; using slashes, commas, or semicolons should work fine. 
+> 
+> I should focus on creating concise tables, possibly with a direct one-line introduction and an option for an Excel version at the end, minimizing explanations. Let’s get started on that!
+
+我把内容按**来源**拆成了几张更好读的表，并把超长描述压缩成“要点版”。
+
+> 说明：  
+> - **AUM单位均为亿美元**  
+> - `—` 表示原文未提供  
+> - 我把 **AUM / 案例 / 机构简介 / Mgmt Meeting / NDA / VDR** 合并进了“补充信息”列，便于阅读
+
+## 总览
+
+| 来源 | 总数 | 已明确投资意向 | 已见面跟进中 | 待安排见面 | 预沟通 | Hold | 见面后意向度不佳 | 未标状态/待确认 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 公司 | 31 | 3 | 14 | 1 | 3 | 5 | 0 | 5 |
+| Zubaid | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 11 |
+| MS | 24 | 0 | 8 | 4 | 8 | 1 | 2 | 1 |
+| HSBC | 22 | 0 | 3 | 0 | 0 | 0 | 0 | 19 |
+| 华泰 | 5 | 0 | 4 | 0 | 1 | 0 | 0 | 0 |
+
+---
+
+## 一、公司
+
+### 1）重点推进
+
+| 状态 | 对接人 | 机构（类型） | 联系人/职务 | 进展要点 | 补充信息 |
+|---|---|---|---|---|---|
+| 已明确投资意向 | Jade | 和谐健康（China PE） | 杨景熙，投资总监 | 8–10亿元；需安排尽调问题讲解会；尚未沟通新估值/策略 | — |
+| 已明确投资意向 | 李璟 | 金融街资本（China PE） | 范道远，投委 | 3亿元；需安排尽调问题讲解会；尚未沟通新估值/策略 | — |
+| 已明确投资意向 | 泽宇 | 平安海控（China PE） | 俞昊，投资总监 | 4亿元；尚未沟通新估值/策略 | — |
+| 已见面跟进中 | 李璟 | 国开科创（China PE） | 熊韬，副总裁 | 国寿介绍；投境内；基石 ODI 做不了；需上集团决策；周末见面 | — |
+| 已见面跟进中 | Jade | 壁仞/东方国际资管（China PE） | 钱澄，董事总经理 | 3/30反馈可出资 5000 万美元；流程为立项会+投决会；目标4月底前 ready；签字时间紧；若合作基金来不及，可由东方国际资管原主体出资 | 案例：MiniMax；简介：四大 AMC 投资线、二级长线投资，与壁仞有合作基金 |
+| 已见面跟进中 | Jade | 宁德浦泉/Lochpine Capital（China PE） | 齐林，执行董事 | 3/24 红波总已见印总、鲍总；需与宁德确定估值 | 简介：宁德时代美元和产投团队一同来访 |
+| 已见面跟进中 | Jade | 众为资本（China PE） | 郑琦，合伙人 | 已开放材料；内部立项中；财法有问题，需整理问题清单 | — |
+| 已见面跟进中 | 泽宇 | 中银资本（China PE） | — | 3/26 初步沟通；可做大额债转股；要求初始负债率 50%以上、贷款总额超过出资额，且后续杠杆率有持续上限 | — |
+| 已见面跟进中 | Jade | 中芯聚源（China PE） | — | 3/25 已见面并沟通最新估值 | — |
+| 已见面跟进中 | Jade | 阿曼招商基金（Global PE） | 胡欣然，副总裁 | 3/25 已见面 | 案例：盛合晶微、某 pre-IPO 量子计算公司；简介：招银国际与阿曼共同出资，需双方均通过决策 |
+| 已见面跟进中 | Jenny | 嘉御资本（Family Office） | Sine Zheng，总监 | 已 update；ticket size 没问题；估值上浮也想参与；卫哲已和印总沟通过 | 简介：卫哲家办 |
+| 已见面跟进中 | Jenny | 三七创投（Corporate） | 郁文祥，总监 | 三七+延趣合计可出 3 亿元：三七 1 亿、延趣 2 亿 | 案例：智谱、Moonshot；简介：三七互娱投资平台，自有资金投资 |
+| 已见面跟进中 | Jade | CPE源峰（China PE） | 金淑敏，董事 | 3/25 已与团队见面；NDA 签署中；刘乐飞想约印总 | 流程：NDA 签署中 |
+| 已见面跟进中 | 泽宇 | Janchor Capital（Global PE） | — | 3/24 在香港与负责人沟通了新轮估值和策略 | — |
+| 已见面跟进中 | — | Mirae Asset（Global PE） | Jim | 3/4 初步接触；尚未沟通新估值/策略；上一轮 proposed 额度 1000 万美元 | 案例：MiniMax |
+| 已见面跟进中 | Jade | 善水资本 Templewater（Global PE） | Baidi Li，董事 | 3/27 合伙人线下沟通；ticket size 和估值无问题；内部继续研究；重点关心算力供应稳定性、HKIC 要求与支持、终端厂商选型逻辑、2026 年 20 亿元收入目标及 Q1 完成度 | 案例：新石器机器人；简介：前身为 Investec 亚洲投资主体，现以自有募资为主 |
+| 已见面跟进中 | — | 慕华科创（China PE） | 周天奇，VP | 最新估值、时间要求和 ticket size 都没问题；额度 3 亿元；可先出 TS，再走立项和投决 | — |
+| 待安排见面 | Jade | Gatelanes（Global PE） | Lester，行政总裁 | 已与鲍总沟通过；预计出资 4000 万美元；待确认是否已沟通本轮估值 | — |
+| 预沟通 | Shirley | 厚朴 Hopu Magnolia（China PE） | Gunther Hamm；Jacqueline Zhang | 预沟通中 | — |
+| 预沟通 | Shirley | 典实资本 | — | 摩尔上市后第八大股东；预计 pre-IPO 轮次出资 5000 万美元 | — |
+| 预沟通 | Jade | 人保股权 | 刘鹤年、宋雅慧，高级总监 | 之前签过 NDA 并看过上轮基础资料；已 update 新一轮计划，待内部反馈是否参与 | 流程：上轮 NDA 已签 |
+
+### 2）储备 / 待确认 / Hold
+
+| 状态 | 对接人 | 机构（类型） | 联系人/职务 | 进展要点 | 补充信息 |
+|---|---|---|---|---|---|
+| 未标状态/待确认 | — | Horizon Ventures 维港投资 | — | 待确认公司联络线 | — |
+| 未标状态/待确认 | — | Sun Hung Kai Capital 新鸿基资本 | — | 待确认公司联络线 | — |
+| 未标状态/待确认 | Jade | Arc Avenue（IDG 二级） | — | 已和明哲沟通过；王世聪有兴趣推动 | — |
+| 未标状态/待确认 | — | 快手 | — | founder 已是公司股东；公司自行联络 | — |
+| 未标状态/待确认 | — | 元溪资本 | 王捷 | 想先看资料；预计两个主体合计可出 3 亿元人民币或等值；已设立并有到账资金 | AUM：美元 2 亿、人民币 5–6 亿；2025 年成立；主要资金来自上市公司家族 |
+| Hold | — | Fidelity | — | IPO 基石储备；已签 NDA | 流程：NDA 已签 |
+| Hold | — | FMR | — | IPO 基石储备；已线上+线下沟通；很感兴趣，但决策周期长 | — |
+| Hold | — | Pictet | — | IPO 基石储备 | — |
+| Hold | — | Capital Group | — | IPO 基石储备；美国基金未必能参与 pre-IPO，但兴趣较高 | — |
+| Hold | — | UBS GAM | — | IPO 基石储备 | 案例：澜起、恒瑞医药、东鹏饮料、三一重工；简介：瑞银环球资管 |
+
+---
+
+## 二、Zubaid 线索池（对接人：Shirley）
+
+| 机构 | 类型 | AUM | AI/前沿科技案例 | 简介/备注 |
+|---|---|---:|---|---|
+| Abu Dhabi Finance Office（ADFO） | Middle East Fund | — | — | 阿布扎比财政办公室线索 |
+| Abu Dhabi Investment Authority（ADIA） | Middle East Fund | 9930 | Qlik、Lila Sciences、AlphaGen | 全球最老牌、最专业的主权基金之一，投资覆盖全资产类别 |
+| Abu Dhabi Investment Council（ADIC） | Middle East Fund | — | — | 阿布扎比投资委员会线索 |
+| Lunate / Axight | Middle East Fund | — | — | Lunate 生态下的成长股权平台，聚焦亚太私募、科技与数字基础设施，依托 Axian 生态提供产业支持 |
+| Blue Five Capital | Middle East Fund | — | — | 线索储备 |
+| Mubadala | Middle East Fund | 3000 | OpenAI、Anthropic、Databricks、Stargate | 阿联酋战略投资机构，重点布局科技、医疗、能源未来赛道 |
+| Kuwait Investment Authority（KIA） | Middle East Fund | — | — | 科威特主权基金线索 |
+| Qatar Investment Authority（QIA） | Middle East Fund | — | — | 卡塔尔主权基金线索 |
+| Humain（PIF） | Middle East Fund | — | xAI、ALLaM、HUMAIN AI Data Centres、AWS-HUMAIN AI Zone | PIF 于 2025 年推出的沙特全栈 AI 平台，覆盖基础设施、云、模型和数据中心，重点做阿拉伯语多模态 |
+| Olayan Investments | Middle East Fund | — | — | Olayan 体系投资平台线索 |
+| Khazanah | Sovereign Fund | 381 | — | 马来西亚主权基金，强调国家战略价值与长期投资 |
+
+---
+
+## 三、MS
+
+### 1）已见面跟进中
+
+| 状态 | 对接人 | 机构（类型） | 联系人/职务 | 进展要点 | 补充信息 |
+|---|---|---|---|---|---|
+| 已见面跟进中 | 泽宇 | General Atlantic（Global PE） | Joan Zhou，MD & Head of China | 3/16 上海现场会后，正在 review VDR；3/30 私下反馈：担心公司战略选择、端侧+底模与豆包/火山形成 head-to-head 竞争，且较依赖吉利体系 | AUM：1000+；案例：Anthropic、Runway、SmartHR；Mgmt：3/16 Onsite；NDA：Signed；VDR：Reviewing |
+| 已见面跟进中 | — | Al Futtaim（Middle East Fund） | Jerome Guiard；Philippe Humbert；Michael Jiang | 认可在中国投资机会及与 OEM 协同逻辑；近期投了 ByteDance、Anthropic，并参与 BYD follow-on；但希望先看 lead investor 更明确后再推进 | 家办 AUM 约 46（简介提及）；案例：ByteDance、Anthropic、BYD；Mgmt：3/18 Onsite；NDA：Investor signed |
+| 已见面跟进中 | — | Granite Asia（Global Growth Fund） | Jenny Lee；Jixun Foo；Joshua Wu；Yusi Chen | 3/24 线上会后反馈：主要关心 AI 相关业务收入贡献，正在做 peers benchmarking；有兴趣继续跟进 | AUM：60+；案例：Centific、Jina AI、Moore Threads、Geek+；Mgmt：3/24 Online；NDA：Sent |
+| 已见面跟进中 | Jenny | Aspex 思柏投资（Crossover Investors） | Hermes Li；Steven Li | 反馈积极：认可 AI-native 全栈基模、多模态和 Agent 能力，以及 AI+Device 逻辑；将向 CIO 汇报并继续跟进 | 案例：MiniMax、Klook、J&T、小鹏；Mgmt：3/24 Onsite；NDA：Sent |
+| 已见面跟进中 | — | SoftBank（Global Growth Fund） | Masayoshi Son；Rajeev Misra；Jason Ding | 团队此前已来公司交流，并给出 6000 万美元 TS；3/30 因估值变化要求补充 cap table、DD 报告、最新 datapack/财模或 Q1 2026 财务摘要 | AUM：1000+；案例：Keenon Robotics 等；简介：全球大型科技成长投资平台 |
+| 已见面跟进中 | — | Sylebra（Crossover Investors） | Daniel Gibson；Jeffrey Fieler | 反馈积极：认可 device-oriented strategy 和更低风险画像；希望补充更多财务信息，并安排与 chairman 通话及上海线下面谈 | AUM：约50；案例：PureCycle、Geek+、Horizon Robotics；Mgmt：3/25 Online；NDA：Sent |
+| 已见面跟进中 | — | Ghisallo（Crossover Investors） | Alex Abagian；Philippe Ziegler；Vivian Lau | 高度认可原生多模态和 AI device 差异化定位；表达强烈推进意愿；内部讨论中，等待更细反馈 | AUM：约40；案例：Databricks、HawkEye 360 等；Mgmt：3/24 Onsite；NDA：Sent |
+| 已见面跟进中 | — | CP Group（Crossover Investors） | Kan Lin；Charlene Fan | 认可效率、可部署性和商业化路径；认为公司有望成为中国 AI 生态长期赢家；拟先与 Chairman 讨论战略合作，再谈投资 | 案例：Biren；Mgmt：3/24 Onsite |
+
+### 2）待安排 / 预沟通 / Hold / 不推进 / 其他
+
+| 状态 | 对接人 | 机构（类型） | 联系人/职务 | 进展要点 | 补充信息 |
+|---|---|---|---|---|---|
+| 待安排见面 | — | Arena（Global Growth Fund） | Ryan Hu，Partner | 3/28 已约 3/31 下午 2 点会议 | AUM：50；案例：EvolutionaryScal；简介：近两年重点看 AI 模型和应用 |
+| 待安排见面 | — | DST（Global Growth Fund） | Yuri Milner；Bruce Xu | 3/29 正在安排管理层 call，要求姜总或印总参与；3/16 banker call 后表示感兴趣 | AUM：500+；案例：阿里、京东、滴滴、小米、Airwallex、Gojek 等 |
+| 待安排见面 | — | DAMAC（Middle East Fund） | Sandip Bhatt；Abdul Jasir；Keshav Mundhra | 3/30 跟进 scheduling call；3/21 已触达 | 案例：Anthropic、xAI、Mistral、EDGNEX；简介：迪拜家族集团，近年积极投 AI 与数据中心 |
+| 待安排见面 | — | MIRAS（Middle East Fund） | Will Zhao；Sureshkumar Devanathan | 3/30 希望与管理层通话；2/5 已触达 | 简介：迪拜多代家办/机构投资平台，长期资金、全球配置 |
+| 预沟通 | — | Hel Ved（Crossover Investors） | Charlie Chai，Founder/CIO | 3/11 已触达；3/25 因出差暂缓，后续再跟 | 案例：Montage、Pony、MiniMax、WeRide；简介：香港科技专注基金 |
+| 预沟通 | — | Temasek 淡马锡（Sovereign Fund） | Grace Huang，Director | 3/27 inbound interest；3/28 MS 已触达 | — |
+| 预沟通 | — | B Capital（Global Growth Fund） | Daisy Deng，General Partner | 3/28 MS 已触达 | 案例：Geek+、Horizon Robotics；简介：洛杉矶起家的成长投资平台 |
+| 预沟通 | — | Cathay Capital（Global Growth Fund） | Mingpo Cai；John Li | 3/28 反馈：过去几个月已与公司讨论，计划通过其新设上海 AI 基金投资；也期待更广泛合作 | 案例：PDD、Galaxea AI、DolphinDB 等；简介：全球成长型 PE，擅长跨境赋能 |
+| 预沟通 | — | Investcorp（Global PE） | Duncan Zheng，Co-Managing Partner | 3/30 MS 已触达 | AUM：约600；案例：WeDoctor 等；简介：巴林起家的全球另类资管 |
+| 预沟通 | — | Orix Capital（Global PE） | Guoping Liu，CEO | 3/28 MS 已触达 | AUM：5000；案例：Cluster、REJECT 等；简介：ORIX 全球金融服务集团 PE 平台 |
+| 预沟通 | — | Macquarie Capital（Global PE） | Colin Wu，Senior Managing Director | 3/30 确认愿意接触，正在安排 management call；3/28 已触达 | AUM：6500+；案例：AirTrunk、Applied Digital 等；简介：麦格理投资与顾问平台 |
+| 预沟通 | — | Susquehanna Growth Equity（Regional Growth Fund） | Tony Kwan | 3/11 已触达 | 案例：HighRadius、HackerRank；简介：SIG 旗下成长基金 |
+| Hold | — | Warburg Pincus（Global PE） | Min Fang，MD & Co-Head of China PE | 公司已有联络线，待确认 | AUM：800+；案例：Insilico Medicine、Princeton Digital Group 等 |
+| 未标状态/待确认 | — | Baupost（Global Growth Fund） | Jack Murrel，Principal | 仅在覆盖名单中，未见明确进展 | AUM：200+；案例：GDS International、GDS Holdings；简介：全球知名价值投资机构 |
+| 见面后意向度不佳 | — | Vertex Growth（Global Growth Fund） | Kee Lock Chua；Zhijin Xia | 3/30 Passed：认可收入与 edge 侧潜力，但认为竞争格局不清晰、易被挤压，且估值偏贵 | AUM：7.5+；案例：Horizon Robotics、Nium 等；Mgmt：3/19 Onsite；NDA：Sent |
+| 见面后意向度不佳 | — | Vitruvian Partner（Global Growth Fund） | Richard Chen；George Jiao | 3/24 Passed：认为机会独特，但与自身策略和组合不匹配 | Mgmt：3/19 Onsite |
+
+---
+
+## 四、HSBC
+
+### 1）已见面跟进中
+
+| 状态 | 对接人 | 机构（类型） | 联系人/职务 | 进展要点 | 补充信息 |
+|---|---|---|---|---|---|
+| 已见面跟进中 | — | BlackRock 贝莱德（Long only） | Hans Sham，Capital Markets | 3/17 路演后反馈积极：认可 pre-IPO 投资人阵容、投资逻辑与亮点清晰；愿 IPO 前再次会面；建议同步对接 BlackRock 其他相关团队 | AUM：116000；案例：Groq、Celestial AI、xAI、CoreWeave；简介：全球最大资管 |
+| 已见面跟进中 | — | HSBC Venture（Global Growth Fund） | Louisa Zhang，Head of Investments APAC | 已与公司多次会议；需更多尽调材料推动内部决策 | AUM：未公开；案例：Poolside、Contextual AI、AI 数据基础设施项目；简介：汇丰集团 CVC |
+| 已见面跟进中 | — | Investment Corporation of Dubai（Sovereign Fund） | Nader Beckhouche；Bowen Han | 1/30 与公司开过会；正在签 NDA | AUM：3410；简介：迪拜政府主要投资平台 |
+
+### 2）覆盖名单 / 未标状态
+
+| 状态 | 对接人 | 机构（类型） | 联系人/职务 | 进展要点 | 补充信息 |
+|---|---|---|---|---|---|
+| 未标状态/待确认 | — | Baillie Gifford（Long only） | Peter，Head of Private | 覆盖名单 | AUM：2800；案例：Anthropic；简介：苏格兰高确信度成长投资机构 |
+| 未标状态/待确认 | — | E Fund 易方达资管 | 刘拓、Tommy | 覆盖名单 | AUM：5120；简介：中国头部公募资管 |
+| 未标状态/待确认 | — | GIC（Sovereign Fund） | Meow Seen YONG | 覆盖名单 | AUM：8000；案例：Anthropic、Databricks、SambaNova；简介：新加坡主权基金 |
+| 未标状态/待确认 | — | Jane Street（Crossover Investors） | Hai Tao Fuan；Shiyu Zheng | 覆盖名单 | AUM：6621；案例：Anthropic、CoreWeave、Numerata、Antithesis |
+| 未标状态/待确认 | — | Ward Ferry（Crossover Investors） | Vineet Mitera，CIO | 覆盖名单 | AUM：50；案例：Grab、Shopee、Garena |
+| 未标状态/待确认 | — | Marshall Wace（Crossover Investors） | Charlie Mansour | 覆盖名单 | AUM：700；案例：Metagenomi、Exscientia |
+| 未标状态/待确认 | — | Verition（Crossover Investors） | Hao Long，PM | 覆盖名单 | AUM：137；简介：多策略对冲基金 |
+| 未标状态/待确认 | — | Olayan（Family Office） | Luca Tedde，Director | 覆盖名单 | AUM：80；简介：沙特知名家族投资平台 |
+| 未标状态/待确认 | — | GSAM（Long only） | Leo Lin，PM | 覆盖名单 | AUM：28000；案例：Anthropic；简介：高盛资管 |
+| 未标状态/待确认 | — | AP Moller（Family Office） | Chetan Mehta；Alex Wang；Jonas Kjersgaard | 覆盖名单 | AUM：20；简介：马士基家族投资平台 |
+| 未标状态/待确认 | — | M&G（Long only） | David Perrett | 覆盖名单 | AUM：3950；简介：英国老牌资管 |
+| 未标状态/待确认 | — | Polar Capital（Long only） | Paul Johnson | 覆盖名单 | AUM：270；简介：英国行业专家型基金 |
+| 未标状态/待确认 | — | Wellington（Long only） | Cedric Pouillart | 覆盖名单 | AUM：16000；简介：全球领先主动管理机构 |
+| 未标状态/待确认 | — | Schroders（Long only） | Jun Qian；Alex Breese | 覆盖名单 | AUM：8237；简介：英国老牌资管，ESG 与多资产强 |
+| 未标状态/待确认 | — | G42（Global Private Equity） | Camillo Schobesberger | 覆盖名单 | AUM：300；案例：OpenAI、xAI、Microsoft、Cerebras；简介：阿布扎比 AI 与云巨头 |
+| 未标状态/待确认 | — | Norges Bank 挪威银行（Sovereign Fund） | Cecilie Lind，PM | 覆盖名单 | AUM：20000；简介：全球最大主权基金之一 |
+| 未标状态/待确认 | — | Sino Group 信和集团（Family Office） | Daryl Ng；David Ng；Alex Ng | 覆盖名单 | AUM：未公开；简介：香港大型地产与科技创新平台 |
+| 未标状态/待确认 | — | PCG 盈科拓展（Family Office） | Richard Li | 覆盖名单 | AUM：未公开；简介：李泽楷旗下私人投资集团 |
+| 未标状态/待确认 | — | Wind Sabre（Family Office） | Daren Wong，CIO | 覆盖名单 | AUM：约15；简介：偏早期与成长期机会 |
+
+---
+
+## 五、华泰
+
+| 状态 | 对接人 | 机构（类型） | 联系人/职务 | 进展要点 | 补充信息 |
+|---|---|---|---|---|---|
+| 已见面跟进中 | — | CLSA 中信里昂亚洲成长基金（长线基金） | Amy Jia；Jason Zhao；Damon Tan | 有初步意向，但希望收到更多资料后再判断 | AUM：50；案例：月之暗面、中联云港、帕西尼、影微、JBD、雷鸟；简介：偏长期支持，近年 AI 算力/硬件出手较多 |
+| 已见面跟进中 | — | 滴滴出行（Corporate） | 管越，AI 投资负责人 | 研究中 | AUM：暂无披露；简介：全球移动出行科技平台，重仓自动驾驶 |
+| 已见面跟进中 | — | 增途资本（Corporate） | 黄博涵，执行董事 | 已见面，后续进展待补充 | AUM：暂无披露；简介：传音控股美元基金，聚焦中资企业出海 |
+| 已见面跟进中 | — | 源一资本（China PE） | 周旸；郑源一 | 有初步意向，但希望收到更多资料后再判断 | AUM：暂无披露；简介：聚焦消费与消费科技，已投瑞幸、Gentle Monster、观夏等 |
+| 预沟通 | — | 华福资本 | 史文琴，投资中心总经理助理 | 预沟通中 | AUM：暂无披露；简介：原华福证券直投平台，现兴银成长资本 |
+
+---
+
+如果你愿意，我下一步可以继续帮你做两版中的任意一种：
+
+1. **Excel 可直接粘贴版（TSV/制表符格式）**  
+2. **按“优先级”重新排序版**（例如：本周必须推进 / 可并行推进 / 储备观察）
+
+
+*Thinking...*
+
 > **Translating PPT content**
 > 
 > The user wants me to translate a PPT image from Chinese to English, adjusting it slightly for context related to Ecoceres and its post-IPO share performance stabilization. They asked specifically about translating the slide title, bullet points, and sections. I'll use OCR to extract the Chinese text since web access isn't necessary. The header is already in English, and I see several columns with colored headings that need translation from Chinese. Let’s get started!
