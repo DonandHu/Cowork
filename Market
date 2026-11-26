@@ -1,3 +1,41 @@
+#	类型	投资者	信心	银行	认购额(USD)	CIA审核	CIA意见	已过内部IC
+1	Strategic	SF Express	90%	UBS	100m	Y	Y	Y
+2	SWF	IFC	90%	HSBC	50m	Y	Y	Y
+3	China fund	Orchid Asia	90%	UBS	50-100m	Y	Y	Gabriel last call
+4	Strategic	Idemitsu	70%	Soc Gen	30-50m	Y	N	IC setup on Dec 18th
+5	Strategic	ORIX	70%	MS	10m	Y	Y	In progress
+6	Long only	Granite	70%	UBS	5-15m	Y	Y	N (IC is quick)
+7	China fund	Taikang	70%	HSBC	10-20m	Y	Y	N (IC is quick)
+8	China fund	Hony	70%	DB	30m	Y	N	N
+9	Hedge fund	Hudson Bay	70%	DB	20m	Y	Y	N
+10	Hedge fund	Millennium	70%	MS	10-20m	Y	Y	No need IC
+11	Hedge fund	Nine Masts	70%	MS	10-20m	Y	Y	No need IC
+12	China fund	Hillhouse	50%	DB	30-50m	Y	N	N
+13	Long only	Amundi	50%	DB	20-25m	N	N	N
+14	Long only	Robeco	50%	DB	20-30m	Y	N	N
+15	Long only	Barings	50%	DB	20-30m	Y	N	N
+16	China fund	IDG	50%	HSBC	20-30m	Y	N	N (IC is quick)
+17	China fund	GBA	50%	HSBC	10-20m	Y	N	N (IC is quick)
+19	China fund	China Post	50%	DB	10-20m	Y	N	N
+20	China fund	GF Fund	50%	DB	20m	Y	N	N
+21	Hedge fund	Maven	50%	HSBC	TBD	Y	N	N
+22	Hedge fund	HRT	50%	UBS	10-20m	Y	N	N (IC is quick)
+23	SWF	ADIA	30%	HSBC	20-30m	N	N	N
+24	SWF	GIC	30%	MS	20-30m	N	N	N
+25	Long only	M&G	30%	HSBC	30-50m	N	N	N
+26	Long only	Ninety One	30%	HSBC	10-20m	N	N	N
+27	Long only	Baillie Gifford	30%	HSBC	30-50m	N	N	N
+28	Long only	Franklin Templeton	30%	HSBC	10-20m	N	N	N
+29	Long only	Mirae	30%	UBS	10-20m	N	N	N (IC is quick)
+30	China fund	Walden	30%	UBS	10-20m	N	N	No need IC
+31	China fund	Fortune Oil	30%	UBS	TBD	N	N	N
+32	China fund	Fullgoal	30%	HSBC	20-30m	N	N	N (IC is quick)
+33	China fund	Greenwood	30%	HSBC	20-30m	N	N	N (IC is quick)
+34	Hedge fund	Qube	30%	UBS	10-20m	N	N	N
+35	Hedge fund	Verition	30%	HSBC	10-20m	N	N	N (IC is quick)
+
+
+
 
 亲，有个问题哦，今年到明年厄尔尼诺，棕榈油减产，预计poem价格会上升，就此现象，是否会影响Ecoceres的利润率呢？对于这个情况，公司怎么看呢？帮忙问问咯，谢谢哈
 
